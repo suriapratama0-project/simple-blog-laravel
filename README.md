@@ -1,6 +1,8 @@
-# Website Portofolio
+# Simpel-blog-laravel
 
-Sebuah website layanan laundry digital yang menampilkan fitur-fitur pemesanan, manajemen pelanggan, dan informasi layanan laundry. Proyek ini dirancang untuk membantu pengguna dalam melakukan transaksi laundry secara lebih mudah, cepat, dan efisien. Website ini berfungsi sebagai antarmuka utama bagi pelanggan dan petugas laundry untuk mengelola layanan seperti laundry kiloan, laundry satuan, dan jenis layanan lainnya. Website ini dibangun menggunakan HTML5, CSS3, JavaScript, dan Bootstrap untuk tampilan depan yang responsif dan interaktif. Pada sisi back-end, digunakan PHP untuk pemrosesan server-side dan MySQL sebagai basis data untuk menyimpan informasi layanan, pelanggan, dan transaksi.
+Proyek ini adalah aplikasi blog berbasis Laravel yang memungkinkan pengguna untuk membuat, membaca, dan mengelola postingan berdasarkan kategori.
+Setiap pengguna dapat menulis postingan di kategori tertentu, dan pengunjung bisa menelusuri atau mencari postingan berdasarkan judul.
+Selain itu, setiap postingan dilengkapi fitur “Read More” agar tampilan halaman utama tetap ringkas dan rapi.
 
 ---
 
@@ -20,67 +22,93 @@ Sebuah website layanan laundry digital yang menampilkan fitur-fitur pemesanan, m
 
 ## Fitur
 
-- **Login Admin**: Sistem autentikasi yang memungkinkan hanya admin atau petugas terdaftar yang bisa mengakses dan mengelola data dalam sistem.
-- **Dashboard Statistik**: Menampilkan data ringkasan seperti jumlah pelanggan, total transaksi yang telah dilakukan, dan total pendapatan laundry secara keseluruhan.
-- **Jenis Layanan**: Mengelola berbagai jenis layanan yang tersedia, seperti setrika, cuci, dan pengeringan.
-- **Jenis Laundry Kiloan**: Input dan pengelolaan layanan berdasarkan berat pakaian pelanggan, cocok untuk pakaian harian dalam jumlah banyak.
-- **Jenis Laundry Satuan**: Pengelolaan layanan berdasarkan item satuan seperti jas, sepatu, karpet, dan lainnya yang dihitung per potong.
-- **Manajemen Pelanggan**: Fitur untuk menambahkan, memperbarui, dan melihat data pelanggan yang menggunakan layanan laundry.
-- **Transaksi Laundry**: Mencatat transaksi baru berdasarkan pelanggan dan jenis layanan yang dipilih, lengkap dengan detail harga dan tanggal.
-- **Hasil Transaksi**: Menampilkan riwayat atau daftar transaksi yang telah dilakukan, termasuk detail layanan dan total pembayaran.
-- **Cetak Transaksi**: Fitur untuk mencetak bukti transaksi atau laporan dalam format cetak, berguna sebagai struk atau arsip laporan administrasi.
+- **CRUD Postingan**: pengguna dapat membuat, mengedit, dan menghapus postingan.
+- **Kategori Postingan**: setiap postingan dapat dikelompokkan berdasarkan kategori tertentu.
+- **Multi User**: beberapa pengguna dapat menulis postingan pada kategori berbeda.
+- **Pencarian Postingan**: pengunjung dapat mencari postingan berdasarkan judul.
+- **Read More**: menampilkan ringkasan postingan di halaman utama dengan opsi membaca selengkapnya.
 
 ---
 
 ## Teknologi yang Digunakan
 
-- **HTML5**: Struktur konten menggunakan tag semantik untuk SEO dan aksesibilitas.
-- **CSS3**: Mengatur tampilan dan layout agar website menarik dan responsif di berbagai perangkat.
-- **JavaScript**: Menambahkan interaktivitas dan fungsi dinamis pada halaman web.
-- **Bootstrap**: Framework CSS yang memudahkan pembuatan desain responsif dan konsisten.
-- **PHP**: Bahasa pemrograman server-side untuk memproses data dan menjalankan logika aplikasi.
-- **MySQL**: Sistem manajemen basis data untuk menyimpan dan mengelola data pelanggan, layanan, dan transaksi.
+- **HTML5**: digunakan untuk menyusun struktur konten secara semantik, sehingga mendukung SEO dan meningkatkan aksesibilitas.
+- **CSS3**: berperan dalam mengatur tampilan serta layout agar website terlihat menarik dan responsif di berbagai perangkat.
+- **JavaScript**: menambahkan interaktivitas dan fungsi dinamis pada halaman, membuat pengalaman pengguna menjadi lebih hidup.
+- **PHP**: digunakan sebagai bahasa pemrograman server-side untuk memproses data dan menjalankan logika aplikasi.
+- **SQLite**: menjadi sistem basis data yang menyimpan dan mengelola data seperti pengguna, kategori, serta postingan.
+- **Laravel**: berfungsi sebagai framework backend untuk mengelola data, routing, autentikasi, dan logika aplikasi secara efisien.
+- **Alpine.js**: membantu menangani interaksi antarmuka dengan cara yang ringan dan sederhana tanpa perlu JavaScript yang kompleks.
+- **Tailwind CSS**: digunakan untuk membangun tampilan modern dan responsif dengan utilitas yang mudah disesuaikan.
 
 ---
 
 ## Struktur Proyek
 
 ```
-laundry-tama/
-├── assets/                 # Folder untuk gambar dan media statis
-│   └── images/             # Subfolder untuk gambar
-├── config/                 # Folder untuk konfigurasi aplikasi
-├── css/                    # Folder untuk file CSS
-├── form/                   # Folder untuk file HTML form
-├── function/               # Folder untuk fungsi-fungsi PHP
-├── js/                     # Folder untuk file JavaScript
-├── proses/                 # Folder untuk proses PHP
-├── vendor/                 # Folder untuk dependensi eksternal (jika ada)
-├── LICENSE                 # File lisensi proyek
-├── README.md               # Dokumentasi proyek
-├── index.php               # Halaman utama aplikasi
-├── login.php               # Halaman login
-├── logout.php              # Halaman logout
-└── register.php            # Halaman pendaftaran
+/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   ├── Middleware/
+│   │   └── Requests/
+│   ├── Models/
+│   ├── Providers/
+│   └── … (lain-lain)
+├── bootstrap/
+│   └── cache/
+├── config/
+├── database/
+│   ├── migrations/
+│   ├── seeders/
+│   └── factories/
+├── public/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── index.php
+├── resources/
+│   ├── views/
+│   ├── css/
+│   ├── js/
+│   └── components/
+├── routes/
+│   ├── web.php
+│   ├── api.php
+│   └── … (opsional: channels.php, console.php)
+├── storage/
+│   ├── app/
+│   ├── framework/
+│   └── logs/
+├── tests/
+│   ├── Feature/
+│   └── Unit/
+├── vendor/
+├── .env
+├── artisan
+├── composer.json
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 
 ```
 
 ## Penjelasan struktur
 
-- **assets/images/**: Menyimpan gambar-gambar yang digunakan di seluruh aplikasi, seperti ikon dan ilustrasi.
-- **config/**: Berisi file konfigurasi yang mengatur pengaturan dasar aplikasi.
-- **css/**: Menyimpan file CSS untuk styling tampilan aplikasi.
-- **form/**: Berisi file HTML untuk form input data, seperti form transaksi dan pendaftaran.
-- **function/**: Menyimpan fungsi-fungsi PHP yang digunakan untuk logika aplikasi.
-- **js/**: Menyimpan file JavaScript untuk menambah interaktivitas pada aplikasi.
-- **proses/**: Berisi script PHP yang menangani proses backend, seperti pemrosesan form dan interaksi dengan database.
-- **vendor/**: Folder ini biasanya berisi dependensi eksternal yang diinstal melalui Composer (meskipun tidak ditemukan dalam repositori ini).
+- **app/**: Tempat kode utama aplikasi - Models, Controllers, Providers, dll.
+- **bootstrap/**: File bootstrap-framework, cache konfigurasi, dll.
+- **config/**: File konfigurasi aplikasi Laravel.
+- **database/**: Migrations (definisi tabel), seeders (data awal), factories (untuk testing).
+- **public/**: Entry point index.php + aset statis (CSS/JS/gambar) yang diakses publik.
+- **resources/**: Views (Blade), aset front-end sumber, komponen UI.
+- **routes/**: File rute aplikasi - web, API, dll.
+- **storage/**: File log, sesi, cache, upload, dll.
+- **tests/**: Testing otomatis aplikasi (unit & fitur).
+- **vendor/**: Dependensi Composer.
+- **Konfigurasiroot**: (composer.json, package.json, tailwind.config.js, vite.config.js) untuk manajemen paket dan tooling front-end.
 - **LICENSE**: Menyediakan informasi tentang lisensi penggunaan proyek.
 - **README.md**: Dokumentasi proyek yang menjelaskan tentang aplikasi, fitur, dan cara penggunaan.
-- **index.php**: Halaman utama aplikasi yang menampilkan dashboard atau halaman depan.
-- **login.php**: Halaman untuk proses login pengguna.
-- **logout.php**: Halaman untuk proses logout pengguna.
-- **register.php**: Halaman untuk pendaftaran pengguna baru.
 
 ---
 
