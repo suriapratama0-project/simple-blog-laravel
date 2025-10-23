@@ -114,32 +114,20 @@ Selain itu, setiap postingan dilengkapi fitur “Read More” agar tampilan hala
 
 ## Tangkapan Layar
 
-#### Halaman Login
-![Preview Website](assets/images/login.png)
+#### Halaman Home
+![Preview Website](public/images/home.png)
 
-#### Halaman Utama
-![Preview Website](assets/images/home.png)
+#### Halaman Posts
+![Preview Website](public/images/posts.png)
 
-#### Halaman Managemen Jenis Layanan
-![Preview Website](assets/images/jenis%20layanan.png)
+#### Halaman Post
+![Preview Website](public/images/post.png)
 
-#### Halaman Managemen Jenis Laundry Satuan
-![Preview Website](assets/images/jenis%20laundry%20satuan.png)
+#### Halaman About
+![Preview Website](public/images/about.png)
 
-#### Halaman Managemen Jenis Laundry Kiloan
-![Preview Website](assets/images/jenis%20laundry%20kiloan.png)
-
-#### Halaman managemen Pelanggan
-![Preview Website](assets/images/managemen%20pelanggan.png)
-
-#### Halaman Transaksi
-![Preview Website](assets/images/transaksi%20baru.png)
-
-#### Halaman Hasil Transaksi Berhasil
-![Preview Website](assets/images/transaksi%20berhasil.png)
-
-#### Halaman Hasil Transaksi 
-![Preview Website](assets/images/hasil%20transaksi.png)
+#### Halaman Contact
+![Preview Website](public/images/contact.png)
 
 ---
 
@@ -166,7 +154,6 @@ Terhubung dengan saya di:
 ---
 
 ## Ucapan Terima Kasih
-- Font Awesome: Ikon yang digunakan untuk mempercantik tampilan antarmuka.
-- Bootstrap: Framework CSS yang membantu membuat desain responsif dan konsisten.
-- Inspirasi dari berbagai aplikasi laundry dan sistem manajemen bisnis.
-- Terima kasih untuk semua masukan, dukungan, dan bantuan selama pengembangan proyek ini.
+- Tim Laravel atas framework yang kuat dan fleksibel.
+- Komunitas Tailwind CSS dan Alpine.js atas dokumentasi yang mudah dipahami dan inspiratif.
+- Seluruh komunitas developer yang berbagi pengetahuan melalui forum, YouTube, dan dokumentasi resmi.
