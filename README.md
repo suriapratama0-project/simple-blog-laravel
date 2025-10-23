@@ -1,67 +1,144 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Website Portofolio
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sebuah website layanan laundry digital yang menampilkan fitur-fitur pemesanan, manajemen pelanggan, dan informasi layanan laundry. Proyek ini dirancang untuk membantu pengguna dalam melakukan transaksi laundry secara lebih mudah, cepat, dan efisien. Website ini berfungsi sebagai antarmuka utama bagi pelanggan dan petugas laundry untuk mengelola layanan seperti laundry kiloan, laundry satuan, dan jenis layanan lainnya. Website ini dibangun menggunakan HTML5, CSS3, JavaScript, dan Bootstrap untuk tampilan depan yang responsif dan interaktif. Pada sisi back-end, digunakan PHP untuk pemrosesan server-side dan MySQL sebagai basis data untuk menyimpan informasi layanan, pelanggan, dan transaksi.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Daftar Isi
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [Fitur](#fitur)  
+- [Teknologi yang Digunakan](#teknologi-yang-digunakan)  
+- [Struktur Proyek](#struktur-proyek)
+- [Penjelasan struktur](#penjelasan-struktur)  
+- [Tangkapan Layar](#tangkapan-layar)  
+- [Informasi Kontak](#informasi-kontak)  
+- [Lisensi](#lisensi)  
+- [Tautan Sosial](#tautan-sosial)  
+- [Ucapan Terima Kasih](#ucapan-terima-kasih)  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Fitur
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Login Admin**: Sistem autentikasi yang memungkinkan hanya admin atau petugas terdaftar yang bisa mengakses dan mengelola data dalam sistem.
+- **Dashboard Statistik**: Menampilkan data ringkasan seperti jumlah pelanggan, total transaksi yang telah dilakukan, dan total pendapatan laundry secara keseluruhan.
+- **Jenis Layanan**: Mengelola berbagai jenis layanan yang tersedia, seperti setrika, cuci, dan pengeringan.
+- **Jenis Laundry Kiloan**: Input dan pengelolaan layanan berdasarkan berat pakaian pelanggan, cocok untuk pakaian harian dalam jumlah banyak.
+- **Jenis Laundry Satuan**: Pengelolaan layanan berdasarkan item satuan seperti jas, sepatu, karpet, dan lainnya yang dihitung per potong.
+- **Manajemen Pelanggan**: Fitur untuk menambahkan, memperbarui, dan melihat data pelanggan yang menggunakan layanan laundry.
+- **Transaksi Laundry**: Mencatat transaksi baru berdasarkan pelanggan dan jenis layanan yang dipilih, lengkap dengan detail harga dan tanggal.
+- **Hasil Transaksi**: Menampilkan riwayat atau daftar transaksi yang telah dilakukan, termasuk detail layanan dan total pembayaran.
+- **Cetak Transaksi**: Fitur untuk mencetak bukti transaksi atau laporan dalam format cetak, berguna sebagai struk atau arsip laporan administrasi.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Teknologi yang Digunakan
 
-## Laravel Sponsors
+- **HTML5**: Struktur konten menggunakan tag semantik untuk SEO dan aksesibilitas.
+- **CSS3**: Mengatur tampilan dan layout agar website menarik dan responsif di berbagai perangkat.
+- **JavaScript**: Menambahkan interaktivitas dan fungsi dinamis pada halaman web.
+- **Bootstrap**: Framework CSS yang memudahkan pembuatan desain responsif dan konsisten.
+- **PHP**: Bahasa pemrograman server-side untuk memproses data dan menjalankan logika aplikasi.
+- **MySQL**: Sistem manajemen basis data untuk menyimpan dan mengelola data pelanggan, layanan, dan transaksi.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## Struktur Proyek
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+```
+laundry-tama/
+├── assets/                 # Folder untuk gambar dan media statis
+│   └── images/             # Subfolder untuk gambar
+├── config/                 # Folder untuk konfigurasi aplikasi
+├── css/                    # Folder untuk file CSS
+├── form/                   # Folder untuk file HTML form
+├── function/               # Folder untuk fungsi-fungsi PHP
+├── js/                     # Folder untuk file JavaScript
+├── proses/                 # Folder untuk proses PHP
+├── vendor/                 # Folder untuk dependensi eksternal (jika ada)
+├── LICENSE                 # File lisensi proyek
+├── README.md               # Dokumentasi proyek
+├── index.php               # Halaman utama aplikasi
+├── login.php               # Halaman login
+├── logout.php              # Halaman logout
+└── register.php            # Halaman pendaftaran
 
-## Contributing
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Penjelasan struktur
 
-## Code of Conduct
+- **assets/images/**: Menyimpan gambar-gambar yang digunakan di seluruh aplikasi, seperti ikon dan ilustrasi.
+- **config/**: Berisi file konfigurasi yang mengatur pengaturan dasar aplikasi.
+- **css/**: Menyimpan file CSS untuk styling tampilan aplikasi.
+- **form/**: Berisi file HTML untuk form input data, seperti form transaksi dan pendaftaran.
+- **function/**: Menyimpan fungsi-fungsi PHP yang digunakan untuk logika aplikasi.
+- **js/**: Menyimpan file JavaScript untuk menambah interaktivitas pada aplikasi.
+- **proses/**: Berisi script PHP yang menangani proses backend, seperti pemrosesan form dan interaksi dengan database.
+- **vendor/**: Folder ini biasanya berisi dependensi eksternal yang diinstal melalui Composer (meskipun tidak ditemukan dalam repositori ini).
+- **LICENSE**: Menyediakan informasi tentang lisensi penggunaan proyek.
+- **README.md**: Dokumentasi proyek yang menjelaskan tentang aplikasi, fitur, dan cara penggunaan.
+- **index.php**: Halaman utama aplikasi yang menampilkan dashboard atau halaman depan.
+- **login.php**: Halaman untuk proses login pengguna.
+- **logout.php**: Halaman untuk proses logout pengguna.
+- **register.php**: Halaman untuk pendaftaran pengguna baru.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## Tangkapan Layar
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+#### Halaman Login
+![Preview Website](assets/images/login.png)
 
-## License
+#### Halaman Utama
+![Preview Website](assets/images/home.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# simple-blog-laravel
+#### Halaman Managemen Jenis Layanan
+![Preview Website](assets/images/jenis%20layanan.png)
+
+#### Halaman Managemen Jenis Laundry Satuan
+![Preview Website](assets/images/jenis%20laundry%20satuan.png)
+
+#### Halaman Managemen Jenis Laundry Kiloan
+![Preview Website](assets/images/jenis%20laundry%20kiloan.png)
+
+#### Halaman managemen Pelanggan
+![Preview Website](assets/images/managemen%20pelanggan.png)
+
+#### Halaman Transaksi
+![Preview Website](assets/images/transaksi%20baru.png)
+
+#### Halaman Hasil Transaksi Berhasil
+![Preview Website](assets/images/transaksi%20berhasil.png)
+
+#### Halaman Hasil Transaksi 
+![Preview Website](assets/images/hasil%20transaksi.png)
+
+---
+
+## Informasi Kontak
+Jika Anda tertarik bekerja sama atau memiliki pertanyaan, hubungi saya:
+- Email: suriapratama0job@gmail.com
+- WhatsApp: +62 831-9026-0337
+- Lokasi: Cikarang, Indonesia
+
+---
+
+## Lisensi
+Proyek ini dilisensikan di bawah **MIT License**. Lihat file [LICENSE](LICENSE) untuk detail.
+
+---
+
+## Tautan Sosial
+Terhubung dengan saya di:
+- [LinkedIn](https://www.linkedin.com/in/suria-pratama-97805434b/)
+- [Twitter](https://x.com/SuriaPratama0)
+- [Instagram](https://www.instagram.com/suria_pratama0/)
+- [Dribbble]
+
+---
+
+## Ucapan Terima Kasih
+- Font Awesome: Ikon yang digunakan untuk mempercantik tampilan antarmuka.
+- Bootstrap: Framework CSS yang membantu membuat desain responsif dan konsisten.
+- Inspirasi dari berbagai aplikasi laundry dan sistem manajemen bisnis.
+- Terima kasih untuk semua masukan, dukungan, dan bantuan selama pengembangan proyek ini.
